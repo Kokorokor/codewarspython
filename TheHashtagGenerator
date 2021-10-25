@@ -1,0 +1,24 @@
+Description:
+The marketing team is spending way too much time typing in hashtags.
+Let's help them with our own Hashtag Generator!
+
+Here's the deal:
+
+It must start with a hashtag (#).
+All words must have their first letter capitalized.
+If the final result is longer than 140 chars it must return false.
+If the input or the result is an empty string it must return false.
+
+
+code starts here -----------------------------------------------------------------------
+def generate_hashtag(s):
+    hash = '#'
+    ss = s.title()
+    sss = ss.split()
+    if 140<(len(s)) or (len(s)) == 0:
+        return False
+    else:
+        ssss = ''.join(sss)
+        ans = hash + ssss
+        return ans
+    #Couldn't be bothered to make a one liner, also im not so good at this im new.XD
