@@ -1,0 +1,18 @@
+Given two numbers m and n, such that 0 ≤ m ≤ n :
+
+convert all numbers from m to n (inclusive) to binary
+sum them as if they were in base 10
+convert the result to binary
+return as a string
+
+Code starts from here-------------------------------------
+def binary_pyramid(m,n):
+        binm = bin(m)[2:]
+        mp = 0
+        for i in range(m, n+1):
+            bm = bin(i)[2:]
+            mp += int(bm)
+            
+        return bin(int(mp))[2:]
+    
+    #Very simple but a thinker, at least for me XD
